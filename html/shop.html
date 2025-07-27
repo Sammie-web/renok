@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENOK - Shop</title>
+    <link rel="stylesheet" href="../css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/shop.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="index3.html" class="logo-text">RENOK</a>
+            </div>
+            <nav class="nav-content">
+                <a href="index3.html" class="nav-link">Home</a>
+                <div class="search-bar-wrapper">
+                    <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="header-icons">
+                <button class="cart-icon-btn" id="cartToggle">
+                    <a href="../html/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="filter-toggle-btn" id="filterToggle">
+                    <i class="fas fa-filter"></i>
+                    <span class="filter-text">Filter</span>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="shop-main-content">
+        <div class="shop-container">
+            <aside class="sidebar" id="shopSidebar">
+                <div class="sidebar-section filter-section">
+                    <h3>Filter Options</h3>
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <input type="range" min="0" max="1000" value="500" class="slider" id="priceRange">
+                        <p>Value: <span id="priceValue">$500</span></p>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Brand</h4>
+                        <label><input type="checkbox" value="brandA"> Brand A</label>
+                        <label><input type="checkbox" value="brandB"> Brand B</label>
+                        <label><input type="checkbox" value="brandC"> Brand C</label>
+                    </div>
+                    <button class="apply-filters-btn">Apply Filters</button>
+                </div>
+
+                <div class="sidebar-section cart-summary" id="cartSummary">
+                    <h3>Your Cart <i class="fas fa-shopping-cart"></i></h3>
+                    <div id="cartItems">
+                        <p>No items in cart.</p>
+                    </div>
+                    <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
+                    <button class="checkout-btn"><a href="../html/cart.html">Checkout</a></button>
+                </div>
+
+                <!-- <div class="sidebar-section product-categories">
+                    <h3>Product Categories</h3>
+                    <ul>
+                        <li><a href="#">Rolling Papers</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Grinders</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div> -->
+            </aside>
+
+            <section class="products-section">
+                <div class="shop-controls">
+                    <div class="sorting-options">
+                        <label for="sortOrder">Sort By:</label>
+                        <select id="sortOrder">
+                            <option value="featured">Featured</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                    <p class="product-count">Showing <span id="displayedProductCount">0</span> of <span
+                            id="totalProductCount">0</span> products</p>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                </div>
+                <div class="load-more-wrapper">
+                    <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index3.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 REN0K. All rights reserved.</p>
+    </footer>
+
+
+
+    <!-- <script src="js/shop.js"></script> -->
+</body>
+
+</html>
