@@ -48,6 +48,7 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--primary);
+    text-decoration: none;
 }
 
 .cart-icon {
