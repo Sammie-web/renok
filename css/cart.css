@@ -73,6 +73,10 @@ body {
     font-weight: 600;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 /* Main Content */
 .cart-main {
     padding-bottom: 3rem;
